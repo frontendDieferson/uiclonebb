@@ -2,10 +2,22 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+
+import Header from './src/components/Header';
+import HeaderSaldo from './src/components/HeaderSaldo';
+import ListDivider from './src/components/CategorySelect';
+import CategorySelect from './src/components/CategorySelect';
+
+
+
+
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Header />
+      <HeaderSaldo />
+     
       <StatusBar style="auto" />
     </View>
   );
